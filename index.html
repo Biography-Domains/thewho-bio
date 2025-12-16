@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - The Who</title>
+    <meta name="description" content="Official The Who biography, discography, songs, and videos.">
+    <link rel="canonical" href="https://thewho.bio/">
+    <meta property="og:title" content="Home - The Who">
+    <meta property="og:description" content="Official The Who biography, discography, songs, and videos.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <style>
+        .nav-link { transition: color 0.2s; }
+        .nav-link:hover { color: #c084fc; }
+        .gradient-text {
+            background: linear-gradient(90deg, #c084fc, #f97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover { transition: transform 0.3s, box-shadow 0.3s; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+    </style>
+
+</head>
+<body class="bg-gray-900 text-white">
+
+    <nav class="fixed w-full z-50 bg-gray-900 bg-opacity-95 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="/" class="text-2xl font-bold text-purple-400">THE WHO</a>
+                <div class="hidden md:flex space-x-6 text-sm">
+                    <a href="/" class="nav-link text-gray-300">Home</a>
+                    <a href="about.html" class="nav-link text-gray-300">Biography</a>
+                    <a href="discography.html" class="nav-link text-gray-300">Discography</a>
+                    <a href="videos.html" class="nav-link text-gray-300">Videos</a>
+                    <a href="songs.html" class="nav-link text-gray-300">Songs</a>
+                    <a href="gallery.html" class="nav-link text-gray-300">Gallery</a>
+                    <a href="awards.html" class="nav-link text-gray-300">Awards</a>
+                </div>
+                <button class="md:hidden text-white" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="/" class="block py-2 text-gray-300">Home</a>
+                <a href="about.html" class="block py-2 text-gray-300">Biography</a>
+                <a href="discography.html" class="block py-2 text-gray-300">Discography</a>
+                <a href="videos.html" class="block py-2 text-gray-300">Videos</a>
+                <a href="songs.html" class="block py-2 text-gray-300">Songs</a>
+                <a href="gallery.html" class="block py-2 text-gray-300">Gallery</a>
+                <a href="awards.html" class="block py-2 text-gray-300">Awards</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-20 bg-gradient-to-b from-purple-900/50 to-gray-900">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-6xl md:text-8xl font-bold mb-6 gradient-text">The Who</h1>
+            <p class="text-2xl text-gray-300 mb-4">Rock, Hard Rock, Mod, Power Pop, Art Rock</p>
+            <p class="text-gray-400 max-w-2xl mx-auto">The Who are an English rock band formed in London in 1964. Their classic lineup consisted of lead singer Roger Daltrey, guitarist and singer Pete Townshend, bass guitarist John Entwistle, and drummer Keith Moon. The Who are considered one of the most influential rock bands of the 20th century, known for their energetic live performances, innovative instrumentation, and socially conscious songwriting. The band emerged from the Mod subculture, initially performing under various names including the...</p>
+            <div class="mt-8 flex justify-center space-x-4">
+                <a href="about.html" class="bg-purple-600 hover:bg-purple-700 px-8 py-3 rounded-full font-bold transition">Read Biography</a>
+                <a href="discography.html" class="border border-purple-400 text-purple-400 hover:bg-purple-400/20 px-8 py-3 rounded-full font-bold transition">Discography</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Songs -->
+    <section class="py-16 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 border-l-4 border-purple-500 pl-4">Popular Songs</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                
+            <a href="song-my-generation.html" class="card-hover bg-gray-800 rounded-xl p-6">
+                <h3 class="text-xl font-bold">My Generation</h3>
+                <p class="text-gray-400 text-sm">My Generation</p>
+            </a>
+        
+            <a href="song-baba-o-riley.html" class="card-hover bg-gray-800 rounded-xl p-6">
+                <h3 class="text-xl font-bold">Baba O'Riley</h3>
+                <p class="text-gray-400 text-sm">Who's Next</p>
+            </a>
+        
+            <a href="song-wont-get-fooled-again.html" class="card-hover bg-gray-800 rounded-xl p-6">
+                <h3 class="text-xl font-bold">Won't Get Fooled Again</h3>
+                <p class="text-gray-400 text-sm">Who's Next</p>
+            </a>
+        
+            <a href="song-pinball-wizard.html" class="card-hover bg-gray-800 rounded-xl p-6">
+                <h3 class="text-xl font-bold">Pinball Wizard</h3>
+                <p class="text-gray-400 text-sm">Tommy</p>
+            </a>
+        
+            <a href="song-who-are-you.html" class="card-hover bg-gray-800 rounded-xl p-6">
+                <h3 class="text-xl font-bold">Who Are You</h3>
+                <p class="text-gray-400 text-sm">Who Are You</p>
+            </a>
+        
+            <a href="song-the-kids-are-alright.html" class="card-hover bg-gray-800 rounded-xl p-6">
+                <h3 class="text-xl font-bold">The Kids Are Alright</h3>
+                <p class="text-gray-400 text-sm">My Generation</p>
+            </a>
+        
+            </div>
+            <div class="text-center mt-8">
+                <a href="songs.html" class="text-purple-400 hover:text-purple-300">View All Songs &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Albums -->
+    <section class="py-16 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 border-l-4 border-orange-500 pl-4">Discography</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                
+            <a href="album-my-generation.html" class="card-hover bg-gray-800 rounded-xl overflow-hidden">
+                <div class="aspect-square bg-gray-700 flex items-center justify-center">
+                    <span class="text-6xl">🎵</span>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold">My Generation</h3>
+                    <p class="text-gray-400 text-sm">1965</p>
+                </div>
+            </a>
+        
+            <a href="album-a-quick-one.html" class="card-hover bg-gray-800 rounded-xl overflow-hidden">
+                <div class="aspect-square bg-gray-700 flex items-center justify-center">
+                    <span class="text-6xl">🎵</span>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold">A Quick One</h3>
+                    <p class="text-gray-400 text-sm">1966</p>
+                </div>
+            </a>
+        
+            <a href="album-the-who-sell-out.html" class="card-hover bg-gray-800 rounded-xl overflow-hidden">
+                <div class="aspect-square bg-gray-700 flex items-center justify-center">
+                    <span class="text-6xl">🎵</span>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold">The Who Sell Out</h3>
+                    <p class="text-gray-400 text-sm">1967</p>
+                </div>
+            </a>
+        
+            <a href="album-tommy.html" class="card-hover bg-gray-800 rounded-xl overflow-hidden">
+                <div class="aspect-square bg-gray-700 flex items-center justify-center">
+                    <span class="text-6xl">🎵</span>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold">Tommy</h3>
+                    <p class="text-gray-400 text-sm">1969</p>
+                </div>
+            </a>
+        
+            </div>
+            <div class="text-center mt-8">
+                <a href="discography.html" class="text-purple-400 hover:text-purple-300">View Full Discography &rarr;</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-gray-900 border-t border-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold text-purple-400 mb-4">The Who</h4>
+                    <p class="text-gray-400 text-sm">Official biography and complete discography.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Explore</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="about.html" class="hover:text-purple-400">Biography</a></li>
+                        <li><a href="discography.html" class="hover:text-purple-400">Discography</a></li>
+                        <li><a href="songs.html" class="hover:text-purple-400">Songs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Media</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="videos.html" class="hover:text-purple-400">Videos</a></li>
+                        <li><a href="gallery.html" class="hover:text-purple-400">Gallery</a></li>
+                        <li><a href="timeline.html" class="hover:text-purple-400">Timeline</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">More</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="awards.html" class="hover:text-purple-400">Awards</a></li>
+                        <li><a href="influence.html" class="hover:text-purple-400">Influence</a></li>
+                        <li><a href="quotes.html" class="hover:text-purple-400">Quotes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 thewho.bio - An educational biography resource</p>
+            </div>
+        </div>
+    </footer>
+</body></html>
